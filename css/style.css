@@ -22,7 +22,9 @@ body{
 
 .container{
 	width : 900px;
+	height:100%;
 	margin:0 auto;	
+	display:block;
 }
 
 header {
@@ -77,7 +79,7 @@ header nav ul li{
 
 .subjects{
 	width: 100%;
-	display: inline-block;
+	float:right;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -98,20 +100,19 @@ header nav ul li{
 }
 
 
-.img-container{
-	display:block;
-	width:100%;
-}
 
-.main-img{
-
+#cube-img{
+width:100%;
+min-height:100%;
 position: relative;
+display:block;
 }
 
 #cube-img img{
 	position:absolute;
-	left:0;
 	display:block;
+	width:100%;
+	min-height:100%;
    -webkit-animation-name: imgFade;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
